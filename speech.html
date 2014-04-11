@@ -1,0 +1,87 @@
+<!--This will work if the file is located on a web server.  Chrome will not let a local file use the microphone -->
+<title>Speech Recorder</title>
+<style>
+	#speechText {
+		width:50%;
+		height:50%;
+		margin-bottom:0px;
+		padding:5px;
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0 auto;
+		border: 1px black solid;
+	}
+	
+	#buttonbox {
+		width:50%;
+		margin-top:0px;
+		padding:5px;
+		margin: 0 auto;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+</style>
+</head>
+
+<a href="index.html"><--Go Back</a>
+<div id="speechText"></div>
+<div id='buttonbox'>
+	<button id="button" onclick="toggleStartStop()"></button>
+	<button id="clear" onclick="clearText()">Clear Text</button>
+	<img id="listeningGif" src="/loading.gif" height="50" width="50" style="display:none;" />
+	<p>This is a demo of Google's Web Speech API.  Enjoy!</p>
+</div>
+
+  <script type="text/javascript">
+	if (!('webkitSpeechRecognition' in window)) {
+		alert("Your browser does not support Speech Recognition awesomeness!");
+	} else {	
+		var recognizing;
+		var recognition = new webkitSpeechRecognition();
+		var finalTranscript = ''
+		reset();
+		recognition.continuous = true;
+		recognition.interimResults  = true;
+
+		recognition.onresult = function (event) {
+			//alert(event.results.length);
+			//alert(event.resultIndex);
+			document.getElementById("speechText").innerHTML = '';
+			var interimTranscript = '';
+			  for (var i = event.resultIndex; i < event.results.length; ++i) {
+				//alert(event.results[i].isFinal);
+				if (event.results[i].isFinal) {
+					finalTranscript += event.results[i][0].transcript + ". ";
+				} else {					
+					interimTranscript += event.results[i][0].transcript + ". ";
+				}
+			  }
+			  
+			//document.getElementById("textarea").value = finalTranscript;
+			document.getElementById("speechText").innerHTML += finalTranscript;
+			document.getElementById("speechText").innerHTML += '<b>'+interimTranscript+'</b>';
+		}
+		
+		recognition.onstart = function(){document.getElementById("listeningGif").style.display = "inline";}
+		recognition.onend = function(){document.getElementById("listeningGif").style.display = "none";}
+		
+		function reset() {
+		  recognizing = false;
+		  document.getElementById("button").innerHTML = "Start Listening";
+		}
+
+		function toggleStartStop() {		
+		  if (recognizing) {
+			recognition.stop();
+			reset();
+		  } else {
+			recognition.start();
+			recognizing = true;
+			document.getElementById("button").innerHTML = "Stop Listening";
+		  }
+		}
+		
+		function clearText() {
+			document.getElementById("speechText").innerHTML = '';
+			finalTranscript = '';
+		}
+	}
+  </script>
