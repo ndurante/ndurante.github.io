@@ -1,223 +1,49 @@
 <!Doctype html>
 <html lang="en">
 <head>
-	<title>Taco Home</title>
-	
-	<style>
-		body {
-			margin: 0 auto;
-			//width: 80%;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-		header, footer, aside, section {
-			display: block;
-		}
-		header{top:0px;height:8px;position:fixed;}
-		.header {
-			height:10%;
-			width: 100%;
-			//-moz-border-radius-left:5px;
-			//-moz-border-radius-right:5px;
-			//border-radius:5px; // for Opera
-			margin-bottom:20px;
-			padding:5px;
-			position:fixed;
-			top:0px;
-			background: #ffffff;
-			box-shadow:0px 5px 10px red;
-			//border:1px solid;
-		}	
-		#scroll {
-			width: 30px;
-			background:#A3A3A3;
-			padding:10px;
-			-moz-border-radius-topleft:5px;
-			-moz-border-radius-topright:5px;
-			border-radius:5px; // for Opera
-			text-align:center;
-			color:#ffffff;
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			z-index: 1;
-			display:none;
-			cursor:pointer;
-			//below lines prevent highlighting of the scroll text
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-		#scroll:hover {
-			background:#666666;
-		}
-		nav ul {
-			list-style-image:none;
-			list-style-position:outside;
-			list-style-type:none;
-		}
-		nav ul li {
-			float:left;
-		}
-		nav ul li a{
-			margin-right:20px;
-			display:block;
-			line-height:40px;
-		}
-		#footer {
-			-moz-border-radius-topleft:5px;
-			-moz-border-radius-topright:5px;
-			border-radius:5px; // for Opera
-			width: 100%;
-			background:#7070DB;
-			padding:10px;
-			
-			bottom:5px;
-			text-align:center;
-			color:#ffffff;
-		}
-		#content {
-			display: table;
-			margin-top:70px;
-		}
-		#mcontent {
-			display: table-cell;
-			padding-right: 22px;
-			width: 620px;
-		}
-		.bpage article {
-			-webkit-column-count: 2;
-			-moz-column-count: 2;
-			-moz-column-gap: 22px;
-			-webkit-coulmn-gap: 22px;
-		}
-		.image {
-			margin: 6px auto;
-			-moz-border-radius: 10px;
-			-webkit-border-radius: 10px;
-			background-color: blue;
-			height: 250px;
-			width: 600px;
-			padding: 5px;
-		}
-		
-		#content aside {
-			display: table-cell;
-			width: 300px;
-			background: #f3f3f3;
-		}
-		#content aside section {
-			-moz-border-radius: 11px;
-			-webkit-border-radius: 11px;
-			background: #e0e0e0;
-			margin: 22px 0 0 22px;
-			margin-top:50px;
-			padding: 11px 22px;
-			width: 50%;
-		}
-	</style>
-	
-	<script>
-	function scrollToBottom(duration) {
-		if (duration <= 0) return;
-		var difference = document.documentElement.scrollHeight + window.scrollY;
-		var perTick = difference / duration * 10;
+	<title>Nick's Github</title>
+	<link rel="stylesheet" type="text/css" href="nickstyle.css">
 
-		setTimeout(function() {
-			window.scroll(0, window.scrollY - perTick);
-			scrollToBottom(duration - 10);
-		}, 10);
-	}
-
-	window.onscroll = function(event) {
-		console.log(window.scrollY);
-		if(window.scrollY == 0) {
-			document.getElementById("scroll").style.display = 'none';
-		}  else {
-			document.getElementById("scroll").style.display = 'block';
-		}
-	}
-	
-	</script>
 <head>
 
 <body>
-
-	<div class="header">
-		Test Website with HTML5 and CSS3
-		
-		<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="jeopardyScore.html">Jeopardy Score</a></li>
-			<li><a href="speech.html">Speech Recorder</a></li>			
-		</ul>
-		</nav>		
-	</div>
-	
-	
-	<div id="content">
-		<div id="mcontent">
-			<h3>Welcome to this page of pictures!</h3>
-			<article class="bpage">
-				<div>
-				<p>Check out that taco!</p>				
-				</div>
-				<img src="http://upload.wikimedia.org/wikipedia/commons/3/3a/NCI_Visuals_Food_Taco.jpg" width="500" height="300">
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"><p>Writing some terrible content!</p></div>
-				<div class="image"></div>
-			</article>
+	<script src="scroll.js"></script>
+	<div id="header">
+		<div id="header-content">
+			Nick's HTML5-CSS3-JavaScript Playground
+			<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="jeopardyScore.html">Jeopardy Score</a></li>
+				<li><a href="speech.html">Speech Recorder</a></li>			
+			</ul>
+			</nav>		
 		</div>
-	
-	
-		<aside>
-			<section>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Feedback</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			</section>
-					<section>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Feedback</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			</section>
-			<section>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Feedback</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			</section>
-			<section>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Feedback</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			</section>			
-		</aside>
-	</div>
-	<div id="scroll" onclick="scrollToBottom(500)">Top</div>
-	<div id="footer">
-		Footer!
 	</div>
 	
+	<section class="section-top section-blue">
+		<div class="content">
+		Welcome!  I'm Nick.  This fancy page is my playground for experimenting with HTML5, CCS3, and JavaScript.  The links above point to some side projects and random
+		fun/useful things I've built that aren't necessarily related to this page.  Check them out!  Let me know your thoughts and take a gander at my <a href="https://github.com/ndurante">
+		code</a>!
+		</div>
+	</section>
+	<section class="section-green">
+		<div class="content">
+		content
+		</div>
+	</section>
+	<section class="section-orange">
+		<div class="content">
+		content
+		</div>
+	</section>
+	<section class="section-blue">
+		<div class="content">
+		content
+		</div>
+	</section>
+
+	<div id="scroll" onclick="scrollToBottom(500)">Top</div>	
 </body>
 </html>
