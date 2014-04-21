@@ -1,4 +1,4 @@
-	function scrollToBottom(duration) {
+	function scrollToTop(duration) {
 		if (duration <= 0) return;
 		var difference = document.documentElement.scrollHeight + window.scrollY;
 		var perTick = difference / duration * 10;
