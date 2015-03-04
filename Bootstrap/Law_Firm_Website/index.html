@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Law Firm of Nick Durante</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <style>
+	body { padding-top: 50px; padding-bottom: 50px; }
+	.big-container { padding: 50px 15px 0px 15px; }
+	.col-padding { padding: 20px 20px; }
+	#anthony-img { float:left; padding: 0px 4px 4px 0px }
+	.carousel-control.left, .carousel-control.right { background-image: none }
+	#map-canvas { height:100%; width:100% }
+	.map-height { height: 30vh; padding: 0px 0px 15px 0px; }
+	@media (min-width:992px) { 
+		.top-row-height{height:40vh;} 
+		.bottom-row-height{height:30vh;} 
+	}
+	@media (max-height:499px) {}
+	</style>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <p class="navbar-brand">The Law Firm of Nick Durante</p>
+			</div>			
+		  </div>
+		</div>
+
+		<div class="container big-container">
+
+			<div class="row">
+				<div class="col-md-6">	
+					<div class="panel panel-default top-row-height">
+					    <div class="panel-heading lead">About</div>
+						<div class="panel-body">
+							<div class="media">
+							  <div class="media-left media-middle">	
+								  <img class="media-object" src="AnthonyEsq.jpg">
+							  </div>
+							  <div class="media-body">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum						
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>				
+				
+				<div class="col-md-6">	
+					<div class="panel panel-default top-row-height">
+					    <div class="panel-heading lead">Services</div>
+						<div class="panel-body">
+							<dl><dt>Lorem ipsum dolor sit amet,</dt>Lorem ipsum dolor sit amet,</dl>
+							<dl><dt>Lorem ipsum dolor sit amet,</dt>Lorem ipsum dolor sit amet,</dl>
+							<dl><dt>Lorem ipsum dolor sit amet,</dt>Lorem ipsum dolor sit amet,</dl>
+						</div>
+					</div>
+				</div>		
+			</div>
+		  
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default bottom-row-height">
+					    <div class="panel-heading lead">Contact</div>
+						<div class="panel-body">
+							<address>
+								<strong>Lorem ipsum dolor sit amet,</dl></strong><br>
+								100 31st Street<br>
+								Suite #100<br>
+								Fake Town, New York 10000<br>
+								<abbr title="Phone">P:</abbr> (123) 567-8901<br>
+								<abbr title="Email">E:</abbr> <a href="#" id="insert-email">&nbsp;</a>
+							</address>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="panel panel-default bottom-row-height">
+					    <div class="panel-heading lead">Testimonials</div>
+						<div class="panel-body">
+							<!--
+							<blockquote>
+								<p>Anthony writes a great will.  Those annoying kids won't touch my money now!</p>
+								<footer>Nick Durante - <cite>Client</cite></footer>
+							</blockquote>
+							-->
+							<div id="testimonial-carosel" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#testimonial-carosel" data-slide-to="0" class="active"></li>
+								<li data-target="#testimonial-carosel" data-slide-to="1"></li>
+								<li data-target="#testimonial-carosel" data-slide-to="2"></li>
+							  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+								<div class="item active">
+								  	<blockquote>
+										<p>Test testimonial #1...</p>
+										<footer>Test Test - <cite>Client</cite></footer>
+									</blockquote>					  
+								</div>
+								<div class="item">
+									<blockquote>
+										<p>Test testimonial #2...</p>
+										<footer>Test Test - <cite>Client</cite></footer>
+									</blockquote>
+								</div>
+								<div class="item">
+									<div class="center-block">
+									<blockquote>
+										<p>Test testimonial #3...</p>
+										<footer>Test Test - <cite>Client</cite></footer>
+									</blockquote>			
+									</div>
+								</div>
+							  </div>
+
+							  <!-- Controls
+							  <a class="left carousel-control" href="#testimonial-carosel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#testimonial-carosel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							   -->
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			
+			<!--<div class="col-padding"></div> <!--add padding when on a small screen -->			
+		</div><!-- /.container -->
+		<div class="container map-height">
+			<div id="map-canvas"></div>
+		</div>
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="container">
+				<div class="navbar-text navbar-right">Website designed by <a id="nick-link" href="#" target="_blank" class="navbar-link">Nicholas Durante</a></div>
+			</div>
+		</nav>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
+		<script type="text/javascript">
+			var locationAddress = 'New York, NY';
+			var locationFriendlyName = 'New York';
+		</script>
+		<script src="../embed_map.js"></script>
+		<script>
+			//an attempt at preventing bot spam...
+			var emailName = "mailto:fakeemail";
+			var emailSuffix = "@verizon.net";
+			var fullEmail = emailName + emailSuffix;
+			var linkedinUrl = "https://www.linkedin.com/in/";
+			var linkedinUsername = "nicholasdurante";
+			var fullLinkedinUrl = linkedinUrl + linkedinUsername;
+			
+			$("#insert-email").html("fakeemail@verizon.net").attr("href", fullEmail);
+			$("#nick-link").attr("href", fullLinkedinUrl);
+
+			function carouselNormalization() {
+				var items = $('#testimonial-carosel .item'), //grab all slides
+					heights = [], //create empty array to store height values
+					tallest; //create variable to make note of the tallest slide
+
+				if (items.length) {
+					function normalizeHeights() {
+						items.each(function() { //add heights to array
+							heights.push($(this).height()); 
+						});
+						tallest = Math.max.apply(null, heights); //cache largest value
+						items.each(function() {
+							$(this).css('min-height',tallest + 'px');
+						});
+					};
+					normalizeHeights();
+
+					$(window).on('resize orientationchange', function () {
+						tallest = 0, heights.length = 0; //reset vars
+						items.each(function() {
+							$(this).css('min-height','0'); //reset min-height
+						}); 
+						normalizeHeights(); //run it again 
+					});
+				}
+			}
+			
+			carouselNormalization();
+		</script>
+
+  </body>
+</html>
