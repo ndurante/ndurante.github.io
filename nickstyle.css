@@ -31,7 +31,7 @@ section .content {
 #header-content {
 	padding: 5px;
 }
-#scroll {
+#scroll-btn {
 	width: 30px;
 	background:#A3A3A3;
 	padding:10px;
