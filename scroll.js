@@ -5,16 +5,16 @@
 
 		setTimeout(function() {
 			window.scroll(0, window.scrollY - perTick);
-			scrollToBottom(duration - 10);
+			scrollToTop(duration - 10);
 		}, 10);
 	}
 
 	window.onscroll = function(event) {
-		console.log(window.scrollY);
+		//console.log(window.scrollY);
 		if(window.scrollY == 0) {
-			document.getElementById("scroll").style.display = 'none';
+			document.getElementById("scroll-btn").style.display = 'none';
 		}  else {
-			document.getElementById("scroll").style.display = 'block';
+			document.getElementById("scroll-btn").style.display = 'block';
 		}
 	}
 
