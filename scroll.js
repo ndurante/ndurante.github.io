@@ -5,7 +5,7 @@
 
 		setTimeout(function() {
 			window.scroll(0, window.scrollY - perTick);
-			scrollToBottom(duration - 10);
+			//scrollToBottom(duration - 10);
 		}, 10);
 	}
 
