@@ -23,16 +23,10 @@
   <style>
 	body { padding-top: 50px; padding-bottom: 50px; }
 	.big-container { padding: 50px 15px 0px 15px; }
-	.col-padding { padding: 20px 20px; }
-	.cursive-font { font-family: 'Tangerine', cursive; font-size: 36px; font-weight:600; }
-	.cursive-font-small { font-family: 'Tangerine', cursive; font-size:24px; font-weight:400;}
-	#anthony-img { float:left; padding: 0px 4px 4px 0px }
-	.carousel-control.left, .carousel-control.right { background-image: none }
-	#map-canvas { height:100%; width:100% }
-	.map-height { height: 30vh; padding: 0px 0px 15px 0px; }
+	.navbar-color { background-image: linear-gradient(to bottom,#66CCFF 0,#f8f8f8 100%); }
 	</style>
 	<body>
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar navbar-default navbar-fixed-top navbar-color" role="navigation">
 		  <div class="container">
 			<div class="navbar-header">
 			  <a class="navbar-brand" href="#">Nick's Github</a>
@@ -65,39 +59,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->		
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>		
-		<script>			
-			$("#nick-link").attr("href", "https://www.linkedin.com/in/nicholasdurante");
-
-			function carouselNormalization() {
-				var items = $('#testimonial-carosel .item'), //grab all slides
-					heights = [], //create empty array to store height values
-					tallest; //create variable to make note of the tallest slide
-
-				if (items.length) {
-					function normalizeHeights() {
-						items.each(function() { //add heights to array
-							heights.push($(this).height()); 
-						});
-						tallest = Math.max.apply(null, heights); //cache largest value
-						items.each(function() {
-							$(this).css('min-height',tallest + 'px');
-						});
-					};
-					normalizeHeights();
-
-					$(window).on('resize orientationchange', function () {
-						tallest = 0, heights.length = 0; //reset vars
-						items.each(function() {
-							$(this).css('min-height','0'); //reset min-height
-						}); 
-						normalizeHeights(); //run it again 
-					});
-				}
-			}
-			
-			carouselNormalization();
-		</script>
-
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </body>
 </html>
