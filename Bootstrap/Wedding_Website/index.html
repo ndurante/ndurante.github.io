@@ -1,77 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sam and Nick's Wedding</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	
-	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-	<link href="css/wedding.css" rel="stylesheet">
-	    
+    <title>Sam & Nick's Wedding</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  
+    <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
   </head>
-  
-	<body>
-		<div class="navbar navbar-default navbar-fixed-top navbar-color" role="navigation">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand cursive-font" href="site_cover.html">Sam & Nick's Wedding</a>
-			</div>
-			<div class="collapse navbar-collapse">
-			  <ul class="nav navbar-nav">
-				<li class="active cursive-font-small"><a href="#">The Ceremony</a></li>
-				<li class="cursive-font-small"><a href="reception.html">The Reception</a></li>
-				<li class="cursive-font-small"><a href="rsvp.html">R.S.V.P.</a></li>
-			  </ul>
-			</div><!--/.nav-collapse -->
-		  </div>
-		</div>
 
-		<div class="container big-container">
+  <body>    
+    <div id="picture-carosel" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/Engagement_Day2.jpg">
+        </div>
+        <div class="item">
+          <img src="images/Engagement_Day.jpg">
+        </div>
+        <div class="item">                  
+          <img src="images/snowyday.jpg">
+        </div>
+      </div>
+    </div>
 
-			<div class="row">
-				<div class="col-md-12">	
-					<div class="panel panel-default">
-					    <div class="panel-heading cursive-font">The Ceremony</div>
-						<div class="panel-body">	
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum							
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<!--<div class="col-padding"></div> <!--add padding when on a small screen -->			
-		</div><!-- /.container -->
-		<div class="container map-height">
-			<div id="map-canvas"></div>
-		</div>
-		<nav class="navbar navbar-inverse navbar-fixed-bottom">
-			<div class="container">
-				<div class="navbar-text navbar-right">Website designed by <a id="nick-link" href="#" target="_blank" class="navbar-link">Nicholas Durante</a></div>
-			</div>
-		</nav>
-		
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->		
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
-		<script type="text/javascript">
-			var locationAddress = 'Fordham University';
-			var locationFriendlyName = '<div class="cursive-font-small">The Ceremony: Fordham Church</div>';
-		</script>
-		<script src="../embed_map.js"></script>		
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">          
+
+          <div class="inner cover">
+            <h1 class="cover-heading cursive-font">Our Wedding</h1>
+            <p class="lead cursive-font-small">Please use this site for all the latest news and updates on our wedding reception and ceremony!</p>
+            <p class="lead">
+              <a href="proposal.html" class="btn btn-lg btn-default cursive-font-btn">Come on in!</a>
+            </p>
+          </div>          
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>    
   </body>
 </html>

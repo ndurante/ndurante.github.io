@@ -15,12 +15,16 @@ a:hover {
 
 /* Custom default button */
 .btn-default,
-.btn-default:hover,
 .btn-default:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
   border: 1px solid #fff;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #ccc;
+  border: 1px solid #fff; 
 }
 
 
