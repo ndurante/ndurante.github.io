@@ -16,7 +16,7 @@
 	
   </head> 
 	<body>
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar navbar-default navbar-fixed-top navbar-color" role="navigation">
 		  <div class="container">
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,7 +25,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand cursive-font" href="site_cover.html
+			  <a class="navbar-brand cursive-font navbar-color" href="site_cover.html
 			  ">Sam & Nick's Wedding</a>
 			</div>
 			<div class="collapse navbar-collapse">
@@ -43,9 +43,13 @@
 			<div class="row">
 				<div class="col-md-12">	
 					<div class="panel panel-default">
-					    <div class="panel-heading cursive-font">R.S.V.P.</div>
+					    <div class="panel-heading cursive-font">R.S.V.P. to Sam & Nick's Wedding</div>
 						<div class="form-pad">						
 							<form class="form">
+								<div class="form-group">
+									<label for="inputEmail">Will you be attending the wedding?</label>
+									
+								</div>
 								<div class="form-group">
 									<label for="inputEmail">Email</label>
 									<input type="email" class="form-control" id="inputEmail" placeholder="sample.email@gmail.com">
@@ -70,10 +74,7 @@
 			</div>
 			
 			<!--<div class="col-padding"></div> <!--add padding when on a small screen -->			
-		</div><!-- /.container -->
-		<div class="container map-height">
-			<div id="map-canvas"></div>
-		</div>
+		</div><!-- /.container -->		
 		<nav class="navbar navbar-inverse navbar-fixed-bottom">
 			<div class="container">
 				<div class="navbar-text navbar-right">Website designed by <a id="nick-link" href="#" target="_blank" class="navbar-link">Nicholas Durante</a></div>
@@ -85,11 +86,5 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->		
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
-		<script type="text/javascript">
-			var locationAddress = 'New York State';
-			var locationFriendlyName = '<div class="cursive-font-small">The Reception: New York</div>';
-		</script>
-		<script src="../embed_map.js"></script>
   </body>
 </html>

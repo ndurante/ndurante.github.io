@@ -1,5 +1,5 @@
 /*Slide Carosel*/
-#picture-carosel{ height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; opacity: .5; z-index: 1;}
+#picture-carosel{ height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; opacity: .8; z-index: 1;}
 
 /*fancy font css*/
 .cursive-font { font-family: 'Tangerine', cursive; font-size: 60px; font-weight:700; }
@@ -30,7 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;  
-  background-color: #333;
+  background-color: #054A91;
 }
 body {
   color: #fff;

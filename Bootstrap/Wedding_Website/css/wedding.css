@@ -5,3 +5,4 @@ body { padding-top: 50px; padding-bottom: 50px; }
 .cursive-font-small { font-family: 'Tangerine', cursive; font-size:24px; font-weight:400;}
 #map-canvas { height:100%; width:100% }
 .map-height { height: 30vh; padding: 0px 0px 15px 0px; }
+.navbar-color { background-image: linear-gradient(to bottom,#FFCC00 0,#054A91 100%); }
