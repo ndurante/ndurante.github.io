@@ -31,7 +31,7 @@
   function initialize() {	
 	var mapOptions = {
 		center: new google.maps.LatLng(0,0),
-		zoom: 15,
+		zoom: 14,
 		disableDefaultUI: true,
 		zoomControl: true,		
 		streetViewControl: true

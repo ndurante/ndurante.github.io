@@ -14,6 +14,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 	<link href="css/wedding.css" rel="stylesheet">	
 
+	<style type="text/css">
+		.map-height { height: 50vh; padding: 0px 0px 15px 0px; }
+		.directions { text-decoration: none; color: black;}
+	</style>
   </head> 
 	<body>
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -32,6 +36,7 @@
 			  	<li class="cursive-font-small"><a href="proposal.html">The Proposal</a></li>
 				<li class="cursive-font-small"><a href="ceremony.html">The Ceremony</a></li>
 				<li class="active cursive-font-small"><a href="#">The Reception</a></li>
+				<li class="cursive-font-small"><a href="registry.html">The Registry</a></li>
 			  </ul>
 			</div><!--/.nav-collapse -->
 		  </div>
@@ -42,9 +47,16 @@
 			<div class="row">
 				<div class="col-md-12">	
 					<div class="panel panel-default">
-					    <div class="panel-heading cursive-font">The Reception</div>
+					    <div class="panel-heading cursive-font">Tappan Hill Mansion</div>
 						<div class="panel-body">	
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum							
+							<div class="media">
+								<div class="media-left media-middle">	
+									<img class="img-rounded" src="images/tappan_hill.jpg">
+							  	</div>
+							  	<div class="media-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum							
+								</div
+							</div>
 						</div>
 					</div>
 				</div>
@@ -68,8 +80,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
 		<script type="text/javascript">
-			var locationAddress = 'New York State';
-			var locationFriendlyName = '<div class="cursive-font-small">The Reception: New York</div>';
+			var locationAddress = '81 Highland Ave, Tarrytown, NY 10591';
+			var locationFriendlyName = '<div class="cursive-font-small"><a class="directions" target="_blank" href="https://goo.gl/maps/iKMD4"><address><strong>Tappan Hill Mansion</strong><br>81 Highland Ave<br>Tarrytown, NY 10591</address></a></div>';
 		</script>
 		<script src="../embed_map.js"></script>	
   </body>

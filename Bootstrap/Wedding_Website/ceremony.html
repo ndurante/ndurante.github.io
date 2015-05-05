@@ -14,6 +14,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 	<link href="css/wedding.css" rel="stylesheet">
 	    
+    <style type="text/css">
+		.map-height { height: 50vh; padding: 0px 0px 15px 0px; }
+		.directions { text-decoration: none; color: black;}
+	</style>
   </head>
   
 	<body>
@@ -33,6 +37,7 @@
 			  	<li class="cursive-font-small"><a href="proposal.html">The Proposal</a></li>
 				<li class="active cursive-font-small"><a href="#">The Ceremony</a></li>
 				<li class="cursive-font-small"><a href="reception.html">The Reception</a></li>
+				<li class="cursive-font-small"><a href="registry.html">The Registry</a></li>
 			  </ul>
 			</div><!--/.nav-collapse -->
 		  </div>
@@ -43,9 +48,19 @@
 			<div class="row">
 				<div class="col-md-12">	
 					<div class="panel panel-default">
-					    <div class="panel-heading cursive-font">The Ceremony</div>
+					    <div class="panel-heading cursive-font">Fordham University Church</div>
 						<div class="panel-body">	
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum							
+							<div class="media">
+								<div class="media-left media-middle">	
+									<img class="img-rounded" src="images/fordham_church.jpg">
+							  	</div>
+							  	<div class="media-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum				
+									<br><br>
+									<a target="_blank" href="http://www.fordham.edu/info/20962/maps_and_directions/4657/directions_to_rose_hill">Directions</a><br>
+									<a target="_blank" href="http://legacy.fordham.edu/media/">Live Stream</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -69,8 +84,9 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
 		<script type="text/javascript">
-			var locationAddress = 'Fordham University';
-			var locationFriendlyName = '<div class="cursive-font-small">The Ceremony: Fordham Church</div>';
+			var locationAddress = 'Fordham University Church';
+			var locationFriendlyName = '<div class="cursive-font-small"><a class="directions" target="_blank" href="https://goo.gl/maps/d3dQC"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></a></div>';
+			//var locationFriendlyName = '<div class="cursive-font-small"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></div>';
 		</script>
 		<script src="../embed_map.js"></script>		
   </body>
