@@ -2,6 +2,7 @@ body { padding-top: 50px; padding-bottom: 50px; }
 .big-container { padding: 50px 0px 0px 0px; }
 .col-padding { padding: 20px 20px; }
 .cursive-font { font-family: 'Tangerine', cursive; font-size: 36px; font-weight:600; }
+.cursive-font-medium { font-family: 'Tangerine', cursive; font-size:32px; font-weight:500;}
 .cursive-font-small { font-family: 'Tangerine', cursive; font-size:24px; font-weight:400;}
 .clean-link { text-decoration: none; color: #9d9d9d;}
 
