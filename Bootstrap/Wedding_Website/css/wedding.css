@@ -23,6 +23,7 @@ body { padding-top: 50px; padding-bottom: 50px; }
 .directions { text-decoration: none; color: black;}
 #map-canvas { height:100%; width:100% }
 
+.footer-float-right { float: right !important; }
 /*Making Navbar collapse to dropdown earlier since we have so many pages*/
 @media (max-width: 1200px) {
     .navbar-header {

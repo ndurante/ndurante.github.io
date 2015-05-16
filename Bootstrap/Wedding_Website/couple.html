@@ -91,7 +91,7 @@
 
 		<nav class="navbar navbar-inverse navbar-fixed-bottom">
 			<div class="container">
-				<div class="navbar-text navbar-right">
+				<div class="navbar-text footer-float-right">
 					<a href="#" class="cursive-font-medium clean-link" id="insert-email">&nbsp;</a>
 					<!--Website designed by <a id="nick-link" href="https://www.linkedin.com/in/nicholasdurante" target="_blank" class="navbar-link">Nicholas Durante</a>-->
 				</div>
@@ -108,6 +108,9 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<![endif]-->
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
-    	<script>$('#insert-email').html('Email us! samnickwedding1990@gmail.com').attr('href','mailto:samnickwedding1990@gmail.com');</script>
+    	<script>
+    		$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
+    		$('#insert-email').href = 'mailto:samnickwedding1990@gmail.com';
+		</script>
   </body>
 </html>
