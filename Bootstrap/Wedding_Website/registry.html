@@ -8,12 +8,20 @@
     <title>Sam and Nick's Wedding</title>
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	-->
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
 	
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 	<link href="css/wedding.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]--> 
   </head>
   
 	<body>
@@ -41,8 +49,12 @@
 		  </div>
 		</div>
 
-		<div class="container big-container">
-
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center cursive-font">	
+					July 16, 2016
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-12">	
 					<div class="panel panel-default">						
@@ -110,13 +122,28 @@
 			<!--<div class="col-padding"></div> <!--add padding when on a small screen -->			
 		</div><!-- /.container -->
 
-		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<nav class="navbar navbar-inverse navbar-bottom navbar-no-margin">
 			<div class="container">
-				<div class="navbar-text navbar-right">Website designed by <a id="nick-link" href="https://www.linkedin.com/in/nicholasdurante" target="_blank" class="navbar-link">Nicholas Durante</a></div>
+				<div class="navbar-text footer-float-right">
+					<a href="#" class="cursive-font-medium clean-link" id="insert-email">&nbsp;</a>
+					<!--Website designed by <a id="nick-link" href="https://www.linkedin.com/in/nicholasdurante" target="_blank" class="navbar-link">Nicholas Durante</a>-->
+				</div>
 			</div>
 		</nav>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--[if GTE IE 9]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<![endif]-->
+		<!--[if !IE]><!-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<![endif]-->
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
+    	<script>
+    		$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
+    		$('#insert-email').href = 'mailto:samnickwedding1990@gmail.com';
+		</script>
   </body>
 </html>

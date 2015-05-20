@@ -8,12 +8,20 @@
     <title>Sam and Nick's Wedding</title>
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	-->
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
 	
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-	<link href="css/wedding.css" rel="stylesheet">	
+	<link href="css/wedding.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->   
   </head> 
 	<body>
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -40,8 +48,12 @@
 		  </div>
 		</div>
 
-		<div class="container big-container">
-
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center cursive-font">	
+					July 16, 2016
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-12">	
 					<div class="panel panel-default">
@@ -55,7 +67,15 @@
 							  	</div>
 							  	<div class="col-md-7">
 							  		<div class="media-body text-justify">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum														
+										<p>Tappan Hill Mansion is located in the scenic Hudson Valley.  Nestled on a hilltop overlooking the Hudson, this stunning stone mansion features amazing views of the Hudson with garden terraces ideal for soaking in the view.  We fell in love with how beautiful it and its views are, as well as the history that comes with the mansion.
+										The house sits on land that was once part of the estate of a wealthy family called Phillipse.  Ironically, the Phillipses remained loyal to the English during the American Revolution.  After the war, the estate, as with the properties of many loyalists, was seized and sold at auction.  It was nearly a century later that a mansion was first built on the property, which was until then only woods and farmland, by Captain William Casey.  Casey had held the property for some time but was unable to develop it until he was awarded his pension for service in the Revolutionary War.</p>
+										
+										<p>Novelist and author of The Adventures of Tom Sawyer and The Adventures of Huckleberry Finn, Mark Twain bought the Casey house in 1902.  He would later sell the house to the famous banker, Jacques Halle, in 1915.</p>
+										
+										<p>Halle lived in a time and social milieu of extreme wealth.  Westchester became the neighborhood of Jay Gould, who built Lyndhurst Castle down the road, and the Rockefellers.  Halle tore down the original wood-frame Casey mansion and replaced it was a massive stone edifice.  Halle sold his estate just before World War II and the mansion became a restaurant.</p>
+										
+										<p>In 1990, Tappan Hill was acquired by an events company, Abigail Kirsch, and now serves solely as a place to party!</p>
+													
 									</div>
 								</div>
 							</div>
@@ -69,16 +89,30 @@
 		<div class="container map-height">
 			<div id="map-canvas"></div>
 		</div>
-		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<nav class="navbar navbar-inverse navbar-bottom navbar-no-margin">
 			<div class="container">
-				<div class="navbar-text navbar-right">Website designed by <a id="nick-link" href="https://www.linkedin.com/in/nicholasdurante" target="_blank" class="navbar-link">Nicholas Durante</a></div>
+				<div class="navbar-text footer-float-right">
+					<a href="#" class="cursive-font-medium clean-link" id="insert-email">&nbsp;</a>
+					<!--Website designed by <a id="nick-link" href="https://www.linkedin.com/in/nicholasdurante" target="_blank" class="navbar-link">Nicholas Durante</a>-->
+				</div>
 			</div>
 		</nav>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--[if GTE IE 9]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<![endif]-->
+		<!--[if !IE]><!-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<![endif]-->
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
 		<script type="text/javascript">
+			$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
+    		$('#nsert-email').href = 'mailto:samnickwedding1990@gmail.com';
+
 			var locationAddress = '81 Highland Ave, Tarrytown, NY 10591';
 			var locationFriendlyName = '<div class="cursive-font-small"><a class="directions" target="_blank" href="https://goo.gl/maps/iKMD4"><address><strong>Tappan Hill Mansion</strong><br>81 Highland Ave<br>Tarrytown, NY 10591</address></a></div>';
 		</script>

@@ -1,5 +1,5 @@
 body { padding-top: 50px;  }
-.big-container { padding: 50px 0px 0px 0px; }
+.big-container { padding: 0px 0px 0px 0px; }
 .col-padding { padding: 20px 20px; }
 .cursive-font { font-family: 'Tangerine', cursive; font-size: 36px; font-weight:600; }
 .cursive-font-medium { font-family: 'Tangerine', cursive; font-size:32px; font-weight:500;}
@@ -24,7 +24,7 @@ body { padding-top: 50px;  }
 #map-canvas { height:100%; width:100% }
 
 .footer-float-right { float: right !important; }
-.navbar-no-margin { margin-bottom: 0px !important;}
+.navbar-no-margin { margin-bottom: 0px !important; margin-top:100px;}
 
 /*Making Navbar collapse to dropdown earlier since we have so many pages*/
 @media (max-width: 1200px) {

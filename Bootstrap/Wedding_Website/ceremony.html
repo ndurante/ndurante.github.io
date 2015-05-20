@@ -8,12 +8,20 @@
     <title>Sam and Nick's Wedding</title>
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	-->
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
 	
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-	<link href="css/wedding.css" rel="stylesheet">	   
+	<link href="css/wedding.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->   
   </head>
   
 	<body>
@@ -41,22 +49,27 @@
 		  </div>
 		</div>		
 
-		<div class="container big-container">
-
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center cursive-font">	
+					July 16, 2016
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-12">	
 					<div class="panel panel-default">
 					    <div class="panel-heading cursive-font">Fordham University Church</div>
 						<div class="panel-body">	
 							<div class="row">
-								<div class="col-md-5 bottom-buffer">
+								<div class="col-md-4 bottom-buffer">
 									<div class="media center-table">	
 										<img class="img-rounded img-responsive" src="images/fordham_church.jpg">
 								  	</div>									  	
 							  	</div>
-							  	<div class="col-md-7">
+							  	<div class="col-md-8">
 							  		<div class="media-body text-justify">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum				
+										What location would be more fitting for us to get married than at Fordham University?  It’s where we met!  On the very first day of college, Sam walked into Nick’s dorm room, which to his pride and embarrassment, had a black garbage bag as a window shade.  Little did we know on that day what we would mean to each other.  Over the next four years at Fordham, we would grow to be very good friends and eventually, Nick asked Sam out to dinner one day during our junior year of college.  We’ve been dating ever since and now are incredibly excited to be engaged and start our lives together as a married couple.
+			
 										<br><br>
 										<a target="_blank" href="http://www.fordham.edu/info/20962/maps_and_directions/4657/directions_to_rose_hill">Directions</a><br>
 										<a target="_blank" href="http://legacy.fordham.edu/media/">Live Stream</a>
@@ -73,16 +86,30 @@
 		<div class="container map-height">
 			<div id="map-canvas"></div>
 		</div>
-		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<nav class="navbar navbar-inverse navbar-bottom navbar-no-margin">
 			<div class="container">
-				<div class="navbar-text navbar-right">Website designed by <a id="nick-link" href="https://www.linkedin.com/in/nicholasdurante" target="_blank" class="navbar-link">Nicholas Durante</a></div>
+				<div class="navbar-text footer-float-right">
+					<a href="#" class="cursive-font-medium clean-link" id="insert-email">&nbsp;</a>
+					<!--Website designed by <a id="nick-link" href="https://www.linkedin.com/in/nicholasdurante" target="_blank" class="navbar-link">Nicholas Durante</a>-->
+				</div>
 			</div>
 		</nav>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--[if GTE IE 9]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<![endif]-->
+		<!--[if !IE]><!-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<![endif]-->
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
 		<script type="text/javascript">
+			$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
+    		$('#nsert-email').href = 'mailto:samnickwedding1990@gmail.com';
+    		
 			var locationAddress = 'Fordham University Church';
 			var locationFriendlyName = '<div class="cursive-font-small"><a class="directions" target="_blank" href="https://goo.gl/maps/d3dQC"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></a></div>';
 			//var locationFriendlyName = '<div class="cursive-font-small"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></div>';
