@@ -24,7 +24,7 @@ a:hover {
 .btn-default:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
+  background-color: rgba(255,255,255,.75);
   border: 1px solid #fff;
 }
 .btn-default:hover {
@@ -40,17 +40,20 @@ a:hover {
 html,
 body {
   height: 100%;  
-  background-color: #054A91;
+  /*background-color: #054A91;  KEEP THIS AND DELETE body background-image IF GOING BACK TO CAROSEL*/  
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: 0 1px 10px rgba(0,0,0,1);
+  background: #054A91 url(../images/disney2.jpg) center center no-repeat;
+  background-size: contain;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   z-index: 5;
+  top: 0px;
   position: absolute;
   display: table;
   width: 100%;
@@ -79,9 +82,8 @@ body {
 }
 .cover .btn-lg {
   padding: 10px 20px;
-  font-weight: bold;
+  font-weight: bold;  
 }
-
 
 /*Media queries to handle different screens*/
 @media (min-width: 768px) {
