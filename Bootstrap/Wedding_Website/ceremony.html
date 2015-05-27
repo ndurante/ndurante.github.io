@@ -17,6 +17,12 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 	<link href="css/wedding.css" rel="stylesheet">
+	<style type="text/css">
+    	.custom-links {
+			color: #333;
+            text-decoration: underline;
+		}
+	</style>
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -63,7 +69,12 @@
 							<div class="row">
 								<div class="col-md-4 bottom-buffer">
 									<div class="media center-table">	
-										<img class="img-rounded img-responsive" src="images/fordham_church.jpg">
+										<!--[if lt IE 9]>
+                                            <img height="100%" width="100%" src="images/fordham_church.jpg">
+                                        <![endif]-->
+                                        <!--[if !IE]><!-->
+										    <img id="nicksamimg" class="img-rounded img-responsive" src="images/fordham_church.jpg">
+                                        <!--<![endif]-->
 								  	</div>									  	
 							  	</div>
 							  	<div class="col-md-8">
@@ -71,8 +82,8 @@
 										What location would be more fitting for us to get married than at Fordham University?  It’s where we met!  On the very first day of college, Sam walked into Nick’s dorm room, which to his pride and embarrassment, had a black garbage bag as a window shade.  Little did we know on that day what we would mean to each other.  Over the next four years at Fordham, we would grow to be very good friends and eventually, Nick asked Sam out to dinner one day during our junior year of college.  We’ve been dating ever since and now are incredibly excited to be engaged and start our lives together as a married couple.
 			
 										<br><br>
-										<a target="_blank" href="http://www.fordham.edu/info/20962/maps_and_directions/4657/directions_to_rose_hill">Directions</a><br>
-										<a target="_blank" href="http://legacy.fordham.edu/media/">Live Stream</a>
+										<a class="custom-links" target="_blank" href="http://www.fordham.edu/info/20962/maps_and_directions/4657/directions_to_rose_hill">Directions to Fordham University</a><br>
+										<a class="custom-links" target="_blank" href="http://legacy.fordham.edu/media/">Fordham Church Live Stream</a>
 									</div>
 								</div>
 							</div>
@@ -108,8 +119,20 @@
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv4VnoxcxFG4v7SYy5P_9-3eoENH1L0S4&sensor=false"></script>
 		<script type="text/javascript">
 			$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
-    		$('#nsert-email').href = 'mailto:samnickwedding1990@gmail.com';
+    		$('#insert-email').attr('href','mailto:samnickwedding1990@gmail.com');
     		
+    		//Handling the size of the img for IE10...
+    		var isIE10 = false;
+            /*@cc_on
+                if (/^10/.test(@_jscript_version)) {
+                    isIE10 = true;
+                }               
+            @*/
+            if(isIE10) {
+                $('#nicksamimg').toggleClass('');
+                $('#nicksamimg').width('100%');
+            }
+            
 			var locationAddress = 'Fordham University Church';
 			var locationFriendlyName = '<div class="cursive-font-small"><a class="directions" target="_blank" href="https://goo.gl/maps/d3dQC"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></a></div>';
 			//var locationFriendlyName = '<div class="cursive-font-small"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></div>';

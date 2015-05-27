@@ -1,25 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Sam Marciano & Nick Durante's Wedding Website.  July 16, 2016.">
     <meta name="author" content="">
     <link rel="icon" href="images/sunflower.ico">
 
     <title>Sam & Nick's Wedding</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
     <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>    
-    
+    <!--[if lt IE 9]>
+        <script>
+          var email = 'samnickwedding1990';
+          var address = '@gmail.com';
+          alert('Hey there,\n\nThanks for visiting our website!  We notice your web browser is a little out of date.  You might have a better experience with our website and a lot of other websites if you updated to a new version.  If you have any questions, feel free to email us at ' + email + address + '.\n\nLove,\nNick and Sam');</script>
+    <![endif]-->
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -40,8 +51,14 @@
 
     </div>
 
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+    <!--[if GTE IE 9]>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if !IE]><!-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <![endif]-->
   </body>
 </html>

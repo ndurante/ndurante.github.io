@@ -63,7 +63,12 @@
 							<div class="row">
 								<div class="col-md-4 bottom-buffer">
 									<div class="media center-table">	
-										<img class="img-rounded img-responsive" src="images/NickSamEngagement.jpg">
+										<!--[if lt IE 9]>
+                                            <img height="100%" width="100%" src="images/NickSamEngagement.jpg">
+                                        <![endif]-->
+                                        <!--[if !IE]><!-->
+										    <img id="nicksamimg" class="img-rounded img-responsive" src="images/NickSamEngagement.jpg">
+                                        <!--<![endif]-->
 								  	</div>									  	
 							  	</div>
 							  	<div class="col-md-8 bottom-buffer">
@@ -115,7 +120,19 @@
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
     	<script>
     		$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
-    		$('#insert-email').href = 'mailto:samnickwedding1990@gmail.com';
+    		$('#insert-email').attr('href','mailto:samnickwedding1990@gmail.com');
+
+    		//Handling the size of the img for IE10...
+    		var isIE10 = false;
+            /*@cc_on
+                if (/^10/.test(@_jscript_version)) {
+                    isIE10 = true;
+                }               
+            @*/
+            if(isIE10) {
+                $('#nicksamimg').toggleClass('');
+                $('#nicksamimg').width('100%');
+            }
 		</script>
   </body>
 </html>
