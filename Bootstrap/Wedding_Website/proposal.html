@@ -122,14 +122,15 @@
     		$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
     		$('#insert-email').attr('href','mailto:samnickwedding1990@gmail.com');
 
-    		//Handling the size of the img for IE10...
+    		//Handling the size of the img for IE10/11...
     		var isIE10 = false;
+    		var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./)
             /*@cc_on
                 if (/^10/.test(@_jscript_version)) {
                     isIE10 = true;
                 }               
             @*/
-            if(isIE10) {
+            if(isIE10 || isIE11) {
                 $('#nicksamimg').toggleClass('');
                 $('#nicksamimg').width('100%');
             }

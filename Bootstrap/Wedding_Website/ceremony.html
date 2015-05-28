@@ -121,18 +121,19 @@
 			$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
     		$('#insert-email').attr('href','mailto:samnickwedding1990@gmail.com');
     		
-    		//Handling the size of the img for IE10...
+    		//Handling the size of the img for IE10/11...
     		var isIE10 = false;
+    		var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./)
             /*@cc_on
                 if (/^10/.test(@_jscript_version)) {
                     isIE10 = true;
                 }               
             @*/
-            if(isIE10) {
+            if(isIE10 || isIE11) {
                 $('#nicksamimg').toggleClass('');
                 $('#nicksamimg').width('100%');
             }
-            
+
 			var locationAddress = 'Fordham University Church';
 			var locationFriendlyName = '<div class="cursive-font-small"><a class="directions" target="_blank" href="https://goo.gl/maps/d3dQC"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></a></div>';
 			//var locationFriendlyName = '<div class="cursive-font-small"><address><strong>Fordham University Church</strong><br>2691 Southern Boulevard<br>Bronx, NY 10458</address></div>';
