@@ -62,7 +62,12 @@
 							<div class="row">
 								<div class="col-md-6 bottom-buffer">
 									<div class="media center-table">	
-										<img class="img-rounded img-responsive" src="images/sheraton.jpg">										
+										<!--[if lt IE 9]>
+                                            <img height="100%" width="100%" src="images/sheraton.jpg">
+                                        <![endif]-->
+                                        <!--[if !IE]><!-->
+										    <img id="sheratonimg" class="img-rounded img-responsive" src="images/sheraton.jpg">
+                                        <!--<![endif]-->
 								  	</div>
 							  	</div>
 							  	<div class="col-md-6 text-justify">
@@ -114,6 +119,19 @@
 			$('#insert-email').html('Email us! samnickwedding1990@gmail.com');
     		$('#insert-email').attr('href','mailto:samnickwedding1990@gmail.com');
     		
+    		//Handling the size of the img for IE10/11...
+    		var isIE10 = false;
+    		var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./)
+            /*@cc_on
+                if (/^10/.test(@_jscript_version)) {
+                    isIE10 = true;
+                }               
+            @*/
+            if(isIE10 || isIE11) {
+                $('#sheratonimg').toggleClass('');
+                $('#sheratonimg').width('100%');
+            }
+
 			var locationAddress = '600 White Plains Rd, Tarrytown, NY 10591';
 			var locationFriendlyName = '<div class="cursive-font-small"><a class="directions" target="_blank" href="https://goo.gl/maps/bH7QJ"><address><strong>Sheraton Tarrytown Hotel</strong><br>600 White Plains Road<br>Tarrytown, NY 10591</address></a></div>';
 		</script>
