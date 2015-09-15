@@ -8,9 +8,16 @@
 #picture-carosel{ height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; opacity: .8; z-index: 1;}
 
 /*fancy font css*/
-.cursive-font { font-family: 'Tangerine', cursive; font-size: 60px; font-weight:700; }
-.cursive-font-small { font-family: 'Tangerine', cursive; font-size:36px; font-weight:400;}
-.cursive-font-btn { font-family: 'Tangerine', cursive; font-size:24px; font-weight:300;}
+@media (max-width: 768px) {
+  .cursive-font { font-family: 'Tangerine', cursive; font-size: 40px; font-weight:700; }
+  .cursive-font-small { font-family: 'Tangerine', cursive; font-size:18px; font-weight:400;}
+  .cursive-font-btn { font-family: 'Tangerine', cursive; font-size:18px; font-weight:300;}
+}
+@media (min-width: 769px) {
+  .cursive-font { font-family: 'Tangerine', cursive; font-size: 60px; font-weight:700; }
+  .cursive-font-small { font-family: 'Tangerine', cursive; font-size:36px; font-weight:400;}
+  .cursive-font-btn { font-family: 'Tangerine', cursive; font-size:24px; font-weight:300;}
+}
 
 /* Links */
 a,
@@ -47,7 +54,7 @@ body {
   text-align: center;
   text-shadow: 0 1px 10px rgba(0,0,0,1);
   /*background: #054A91 url(../images/disney2.JPG) center center no-repeat; */
-  background: #054A91 url(../images/NickSam_Eng_136.jpg) center center no-repeat;
+  background: #054A91 url(../images/NickSam_Eng_123.jpg) center center no-repeat;
   background-size: contain;
 }
 
