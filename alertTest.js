@@ -1,1 +1,1 @@
-alert("TEST");
+alert("loaded from other server");
